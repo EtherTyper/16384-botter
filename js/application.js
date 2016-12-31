@@ -3,8 +3,11 @@ window.requestAnimationFrame(function () {
   window.game = new GameManager(8, KeyboardInputManager, HTMLActuator, LocalScoreManager);
 });
 
-for (var i=0;; i = (i + 1) % 4){
+function bot(i) {
   window.setTimeout(function () {
     window.game.move(i);
+    bot((i+1)%4);
   }, 500);
 }
+
+bot(0);
