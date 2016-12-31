@@ -6,6 +6,5 @@ window.requestAnimationFrame(function () {
 // for (var i=0;; i = (i + 1) % 4){
   window.setTimeout(function () {
     window.game.move(3);
-    alert("Hello!")
   }, 500);
 // }
